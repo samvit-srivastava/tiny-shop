@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 Georgia, 'Times New Roman', serif; background: #fbf7f0; color: #2b2118; }
+header { padding: 28px 32px 12px; border-bottom: 2px solid #2b2118; }
+header h1 { margin: 0; font-size: 34px; letter-spacing: -0.5px; }
+header p { margin: 2px 0 0; color: #7a6650; font-style: italic; }
+main { display: grid; grid-template-columns: 1fr 320px; gap: 28px; padding: 28px 32px; max-width: 1000px; }
+.products { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; align-content: start; }
+.product { background: #fff; border: 1px solid #e3d9c9; padding: 16px; }
+.product h2 { margin: 0 0 4px; font-size: 19px; }
+.price { margin: 0 0 12px; color: #7a6650; }
+button { font: inherit; background: #2b2118; color: #fbf7f0; border: 0; padding: 8px 14px; cursor: pointer; }
+button:hover { background: #4a3a2b; }
+.cart { background: #fff; border: 1px solid #e3d9c9; padding: 18px; align-self: start; }
+.cart h2 { margin: 0 0 10px; font-size: 21px; }
+#lines { list-style: none; margin: 0 0 12px; padding: 0; }
+#lines li { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px dashed #e3d9c9; }
+#lines input { width: 64px; font: inherit; padding: 2px 6px; }
+.empty { color: #7a6650; font-style: italic; }
+.coupon { display: flex; gap: 6px; margin-bottom: 12px; }
+.coupon input { flex: 1; font: inherit; padding: 6px 8px; border: 1px solid #c9bba5; }
+dl { display: grid; grid-template-columns: 1fr auto; margin: 0; gap: 4px 0; }
+dd { margin: 0; text-align: right; }
+.grand { font-weight: bold; font-size: 20px; border-top: 2px solid #2b2118; padding-top: 6px; margin-top: 4px; }
+#message { min-height: 1.5em; color: #7a6650; font-style: italic; }
+@media (max-width: 720px) { main { grid-template-columns: 1fr; padding: 20px 16px; } }

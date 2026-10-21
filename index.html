@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tiny Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Tiny Shop</h1><p>Audio gear, shipped fast.</p></header>
+  <main>
+    <section class="products">
+      <article class="product"><h2>Headphones</h2><p class="price">$50.00</p><button class="add" data-id="hp">Add to cart</button></article>
+      <article class="product"><h2>USB-C Cable</h2><p class="price">$12.50</p><button class="add" data-id="cb">Add to cart</button></article>
+      <article class="product"><h2>Laptop Stand</h2><p class="price">$35.00</p><button class="add" data-id="ls">Add to cart</button></article>
+    </section>
+    <aside class="cart">
+      <h2>Your cart</h2>
+      <ul id="lines"><li class="empty">Your cart is empty.</li></ul>
+      <div class="coupon"><input id="coupon" placeholder="Coupon code"><button id="apply">Apply</button></div>
+      <dl>
+        <dt>Subtotal</dt><dd id="subtotal">$0.00</dd>
+        <dt>Discount</dt><dd id="discount">−$0.00</dd>
+        <dt class="grand">Total</dt><dd class="grand" id="total">$0.00</dd>
+      </dl>
+      <p id="message" role="status"></p>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
